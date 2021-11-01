@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+}
+
+div.container{
+    width: 22%;
+    margin: auto;
+    padding: 25px;
+    height: 78vh;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(212, 167, 115, 0.637),#fff, rgba(212, 167, 115, 0.637), #fff, #291b0aa3, #fff, #291b0aa3, #fff, #fff, #fff, #fff);
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 2px rgb(194, 192, 192);
+}
+
+.brand-info{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.brand-logo{
+    /* width: 50px;
+    height: 50px; */
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    background: rgba(207, 133, 48, 0.637);
+    border-radius: 2px;
+}
+
+form{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label,span{
+    color: #222;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+
+span{
+    margin-top: -5px;
+}
+
+input{
+    width: 100%;
+    padding: 6px;
+    margin: 0px auto 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    color: #222;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.fpw{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.fpw:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-1{
+    width: 90%;
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #222;
+}
+
+.btn-1:hover{
+    color: #222;
+    background: #fff;
+    border: 1px solid #222;
+}
+
+.btn-2{
+    width: 90%;
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #222;
+    background-color: rgba(230, 225, 220, 0.726);
+    font-size: 0.7rem;
+}
+
+.btn-2:hover{
+    background: #222;
+    color: #fff;
+}
+
+.bi-eye, .bi-eye-slash{
+    padding: 6px;
+    position: absolute;
+    z-index: 15;
+    font-weight: 500;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.other{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #cf8530a2; 
+}
+
+.other a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    div.container{
+        width: 80%;
+        margin: 70px auto;
+        height: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    div.container{
+        width: 50%;
+        margin: 70px auto;
+        padding: 30px 15px;
+        height: 100%;
+    }
+}
+
+
+
+
+

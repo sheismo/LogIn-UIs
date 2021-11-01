@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style-main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="brand-info">
+            <div class="brand-logo">
+                <h4>Organic <br> Shops</h4>
+            </div>
+        </div>
+
+        <form action="">
+            <div>
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" autofocus required placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" autofocus required placeholder="Enter your password">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+            <div class="fpw">
+                <span>Forgot password?</span>
+            </div>
+        </form>
+
+        <br>
+
+        <div class="buttons">
+            <button class="btn-1" type="submit">Log In <i class="bi bi-arrow-right-circle"></i></button>
+            <br>
+            <button class="btn-2">Don't have an account? <b>Register!</b></button>
+        </div>
+        
+    </div>
+
+    <button class="other"><a href="index.html">View Other</a></button>
+
+    <script>
+        togglePassword.addEventListener('click', function(e){
+            const togglePassword = document.querySelector('#togglePassword');
+            const password = document.querySelector('#password');
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('bi-eye');
+        });
+    </script>
+</body>
+</html>

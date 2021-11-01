@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+}
+
+div.container{
+    width: 20%;
+    margin: auto;
+    padding: 25px;
+    height: 78vh;
+    margin-top: 50px;
+    background-image: linear-gradient( #adfaca, #fff, #fff);
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px 2px rgb(177, 176, 176);
+}
+
+.brand-info{
+    text-align: center;
+}
+
+.brand-logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+.brand-name{
+    color: #067d29;
+    font-weight:700;
+}
+
+form{
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label{
+    color: #043623;
+    font-size: 0.8rem;
+}
+
+span{
+    color: #043623;
+    font-size: 0.7rem;
+    margin-bottom: -15px;
+    font-weight:300;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    color: #064d31;
+}
+
+.fpw{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.fpw:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-1{
+    width: 90%;
+    padding: 7px 12px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #3dce68;
+    margin-bottom: 5px;
+}
+
+.btn-1:hover{
+    background: #36bb5e;
+}
+
+.btn-2{
+    width: 90%;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #064d31;
+    background-color: #58f787 ;
+}
+
+.btn-2:hover{
+    background: #36f870;
+}
+
+.bi-eye, .bi-eye-slash{
+    padding: 10px;
+    position: absolute;
+    z-index: 15;
+    font-weight: 700;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.other{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 6px 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: #064d31;
+    background-color: #58f787 
+}
+
+.other a{
+    text-decoration: none;
+    color: #064d31;
+}
+
+.other:hover{
+    background: #36f870;
+
+}
+
+@media (max-width: 768px){
+    div.container{
+        width: 80%;
+        margin: 70px auto;
+        height: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    div.container{
+        width: 50%;
+        margin: 70px auto;
+        padding: 30px 15px;
+        height: 100%;
+    }
+}
+
+
+
+
+

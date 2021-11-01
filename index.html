@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="brand-info">
+            <img  class="brand-logo" src="logoipsum-logo-13.svg" alt="logo">
+            <h4 class="brand-name">Organic Shops</h4>
+        </div>
+
+        <form action="">
+            <div>
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" autofocus required placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" autofocus required placeholder="Enter your password">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+            <div class="fpw">
+                <span>Forgot password?</span>
+            </div>
+        </form>
+
+        <br> <br>
+
+        <div class="buttons">
+            <button class="btn-1" type="submit">Log In</button>
+            <br>
+            <span class="dha">Don't have an account?</span>
+            <br>
+            <button class="btn-2">Register</button>
+        </div>
+    </div>
+
+    <button class="other"><a href="main.html">View Other</a></button>
+    <!-- changeText(){
+        setInterval(() => {
+            var text = ["Welcome to Orsul", "The bedrock of exchanging Quality Service for value", "Tired of having to fix an item more than once?", "Are you tired of having to repair an item multiple times without getting it properly fixed?", "Are looking for Quality Items, Tools, Materials, and Equipments from verified Sellers?"];
+            var counter = 0;
+            let element = document.getElementById("changeText");
+            element.innerHTML = text[counter];
+            counter++;
+            if (counter > text.length){
+            this.counter = 0;
+            };
+        }, 2000);   
+    } 
+    .main-text{
+    font-size: 2rem;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(-60deg, #FFF, #EDA601);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+-->
+<script>
+    togglePassword.addEventListener('click', function(e){
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('bi-eye');
+    });
+</script>
+</body>
+</html>
